@@ -1,0 +1,42 @@
+begin_variables
+float @a;
+int @b;
+float @nr1;
+float @nr2;
+bool @b2;
+bool @b1;
+float @varnou;
+int @zz[13];
+int @cf;
+int @bn[13];
+float @bff;
+string @sir;
+const int @all=12;
+int @darar;
+end_variables
+
+begin_functions
+int @f1(float @x);
+string @f1(int @a,int @b);
+int @f2(int @a, float @d,string @f);
+int @f3(int @c);
+int @f3(float @c);
+float @f4(string @a);
+int @f1(int @b);
+struct #da (int @c, float @d);
+#da @este;
+end_functions
+
+begin_progr
+int @salut;
+struct #struct2 (int @c, float @d);
+int @f22(int @a, float @d,string @f);
+@f2(12,@f4(asda),@f1(@f3(12),23));
+@f2(12,@f4(asda),@f1(23,@f3(1234.56)));
+@a=12.4+@varnou+34.6;
+@b=100+50+(5-9)*100;
+@zz[12]=234+@b;
+@cf=10;
+@este.@c=12+10;
+@darar=@all;
+end_progr
